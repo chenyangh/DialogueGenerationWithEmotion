@@ -7,7 +7,7 @@ import torch.optim as optim
 import pandas as pd
 import torch.nn.functional as F
 from torch.autograd import Variable
-from model import AttentionLSTMClassifier
+from dis_model import AttentionLSTMClassifier
 from torch.utils.data import Dataset, DataLoader
 from early_stop import EarlyStop
 from measurement import CalculateFM

@@ -3,7 +3,7 @@ import torch
 import pandas as pd
 import numpy as np
 from jiwei_dataset import build_dict
-from model3 import PersonaSeq2SeqAttentionSharedEmbedding
+from gen_model import PersonaSeq2SeqAttentionSharedEmbedding
 import torch.nn as nn
 import torch.optim as optim
 from torch.autograd import Variable

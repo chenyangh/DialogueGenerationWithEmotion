@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
-from model3 import PersonaSeq2SeqAttentionSharedEmbedding
+from gen_model import PersonaSeq2SeqAttentionSharedEmbedding
 from beam_search import Beam
 import pandas as pd
 import numpy as np
