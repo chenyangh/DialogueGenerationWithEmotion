@@ -10,7 +10,7 @@ from torch.autograd import Variable
 from dis_model import AttentionLSTMClassifier
 from torch.utils.data import Dataset, DataLoader
 from early_stop import EarlyStop
-from measurement import CalculateFM
+# from measurement import CalculateFM
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -124,7 +124,7 @@ def one_fold(fold_int, is_nine_folds):
     model.cuda()
 
     optimizer = optim.Adam(model.parameters())
-    loss_criterion = nn.BCELoss()
+    loss_criterion = nn.MSELoss()
     for epoch in range(4):
         print('Epoch:', epoch, '===================================')
         train_loss = 0
@@ -152,41 +152,8 @@ def one_fold(fold_int, is_nine_folds):
         if es.if_stop():
             print('Start over fitting')
             break
-    f_ma = []
-    f_mi = []
-    for threshold in range(0, 100, 5):
-        threshold /= 100
-        tmp = CalculateFM(np.concatenate(pred_list, axis=0), np.concatenate(gold_list, axis=0), threshold=threshold)
-        f_ma.append(tmp['MacroFM'])
-        f_mi.append(tmp['MicroFM'])
-    return f_ma, f_mi
 
 
 if __name__ == '__main__':
-    f_ma_list = []
-    f_mi_list = []
-    for i in range(5):
-        f_ma, f_mi = one_fold(i, is_nine_folds=True)
-        f_ma_list.append(f_ma)
-        f_mi_list.append(f_mi)
-
-    f_ma_np_9 = np.asarray(f_ma_list).mean(axis=0)
-    f_mi_np_9 = np.asarray(f_mi_list).mean(axis=0)
-
-    f_ma_list = []
-    f_mi_list = []
-    for i in range(5):
-        f_ma, f_mi = one_fold(i, is_nine_folds=False)
-        f_ma_list.append(f_ma)
-        f_mi_list.append(f_mi)
-
-    f_ma_np_16 = np.asarray(f_ma_list).mean(axis=0)
-    f_mi_np_16 = np.asarray(f_mi_list).mean(axis=0)
-
-    import scipy.io as sio
-
-    sio.savemat('we.mat', {'we_9_ma': f_ma_np_9,
-                            'we_9_mi': f_mi_np_9,
-                            'we_16_ma': f_ma_np_16,
-                            'we_16_mi': f_mi_np_16})
+    pass
 

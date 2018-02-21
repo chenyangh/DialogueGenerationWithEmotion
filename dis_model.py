@@ -164,7 +164,7 @@ class AttentionLSTMClassifier(nn.Module):
         lstm_out, unpacked_len = nn.utils.rnn.pad_packed_sequence(packed_output, batch_first=True)
 
         # global attention
-        if True:
+        if False:
             output = lstm_out
             seq_len = torch.LongTensor(unpacked_len).view(-1, 1, 1).expand(output.size(0), 1, output.size(2))
             seq_len = Variable(seq_len - 1).cuda()
@@ -180,7 +180,7 @@ class AttentionLSTMClassifier(nn.Module):
             y_pred = F.relu(self.hidden2label(out))
         # loss = self.loss_criterion(nn.Sigmoid()(y_pred), y)
 
-        return F.softmax(y_pred, dim=1)
+        return y_pred
 
     def load_glove_embedding(self, id2word):
         """
