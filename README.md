@@ -1,6 +1,6 @@
 # Dialogue Generation with Specified Emotions
 
-**CODE CLEANING IS STILL IN PROGRESS, IT WILL BE DONE BY 12th MARCH.**
+**CODE CLEANING JUST STARTED, IT WILL BE DONE BY 12th MARCH.**
 
 This repo contains the implementation of the two papers:
 
