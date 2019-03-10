@@ -24,12 +24,18 @@ CBET dataset can be accessed through this [link](https://github.com/chenyangh/CB
 
 To replicate the results in the paper, you need to follow the following instructions:
 
+1.  Firstly, train an emotion classifier using CBET dataset.  
 
-### Train a emotion classifier 
-    ``` 
-    ``` 
 
-2.
+
+
+
+
+2. Download jiwei's dataset as in his [github page](), I made a code that converts his dataset from token IDs to actual tokens.
+
+```
+python jiwei_dataset.py
+```
 
 ## Citation
 If you find our work is helpful, please consider citing one of the following papers.
