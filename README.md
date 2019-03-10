@@ -1,4 +1,7 @@
-# DialogueGenerationWithEmotion
+# Dialogue Generation with Specified Emotions
+
+CODE CLEANING IS STILL IN PROGRESS, IT WILL BE DONE BY 12th MARCH.
+
 This repo contains the implementation of the two papers:
 
 [*Automatic dialogue generation with expressed emotions*](http://www.aclweb.org/anthology/N18-2008)
