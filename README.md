@@ -1,4 +1,4 @@
-# Dialogue Generation with Specified Emotions
+# Dialogue Generation with Expressed Emotions
 
 **CODE CLEANING JUST STARTED, IT WILL BE DONE BY 12th MARCH 2019.**
 
@@ -9,9 +9,10 @@ This repo contains the implementation of the two papers:
 
 [Generating Responses Expressing Emotion in an Open-domain Dialogue System](https://conversations2018.files.wordpress.com/2018/10/conversations_2018_paper_9_preprint2.pdf)
 
+The second paper is basically an extension of the first, it shows four more approaches to express a specified emotions. 
+
 ## Citation
 If you find our work is helpful, please consider citing one of the following papers.
-The second paper is basically an extension of the first, it shows four more approaches to express a specified emotions. 
 
 ```
 @inproceedings{huang2018automatic,
