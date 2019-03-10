@@ -11,6 +11,26 @@ This repo contains the implementation of the two papers:
 
 The second paper is basically an extension of the first, it shows four more approaches to express specified emotions. 
 
+The following figure shows an overview of all the 7 models. 
+
+![models](img/models.jpg)
+
+## Instructions
+The code is originally written in PyTorch0.3 and Python3.6
+
+This project is heavily relying on emotion classifier. In this code ,we use a very simple Bi-LSTM model. The performance would very but not too much depending what kinda of text classifier you are using.
+
+CBET dataset can be accessed through this [link](https://github.com/chenyangh/CBET-dataset). It is balanced in single labeled emotions and preprocessed. 
+
+To replicate the results in the paper, you need to follow the following instructions:
+
+
+### Train a emotion classifier 
+    ``` 
+    ``` 
+
+2.
+
 ## Citation
 If you find our work is helpful, please consider citing one of the following papers.
 
@@ -34,3 +54,4 @@ If you find our work is helpful, please consider citing one of the following pap
   year={2018}
 }
 ```
+
