@@ -28,9 +28,6 @@ To replicate the results in the paper, you need to follow the following instruct
 
 
 
-
-
-
 2. Download jiwei's dataset as in his [github page](), I made a code that converts his dataset from token IDs to actual tokens.
 
 ```

@@ -1,16 +1,16 @@
 import os
-# os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+os.environ['CUDA_VISIBLE_DEVICES'] = '3'
 from torch.utils.data import Dataset, DataLoader
 import torch
 import pandas as pd
 import numpy as np
 from jiwei_dataset import build_dict
-from model3 import PersonaSeq2SeqAttentionSharedEmbedding
+from model.dec_trans import Seq2SeqAttentionSharedEmbedding
 import torch.nn as nn
 import torch.optim as optim
 from torch.autograd import Variable
 from tqdm import tqdm
-from early_stop import EarlyStop
+from utils.early_stopping import EarlyStopping
 
 NUM_EMO = 9
 
@@ -59,7 +59,7 @@ class EmotionDataLoader(Dataset):
 if __name__ == '__main__':
     word2id, id2word = build_dict()
     pad_len = 30
-    batch_size = 600
+    batch_size = 50
     emb_dim = 300
     dim = 600
     vocab_size = len(word2id)
@@ -92,7 +92,7 @@ if __name__ == '__main__':
     # loader = iter(train_loader)
     # next(loader)
 
-    model = PersonaSeq2SeqAttentionSharedEmbedding(
+    model = Seq2SeqAttentionSharedEmbedding(
         emb_dim=emb_dim,
         vocab_size=vocab_size,
         src_hidden_dim=dim,
@@ -167,7 +167,7 @@ if __name__ == '__main__':
             model.state_dict(),
             open(os.path.join(
                 'checkpoint',
-                'new_persona' + '_epoch_%d' % (epoch) + '.model'), 'wb'
+                'new_transform' + '_epoch_%d' % (epoch) + '.model'), 'wb'
             )
         )
 
