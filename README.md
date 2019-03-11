@@ -7,7 +7,7 @@ This repo contains the implementation of the two papers:
 [*Automatic dialogue generation with expressed emotions*](http://www.aclweb.org/anthology/N18-2008)
 
 
-[Generating Responses Expressing Emotion in an Open-domain Dialogue System](https://conversations2018.files.wordpress.com/2018/10/conversations_2018_paper_9_preprint2.pdf)
+[*Generating Responses Expressing Emotion in an Open-domain Dialogue System*](https://conversations2018.files.wordpress.com/2018/10/conversations_2018_paper_9_preprint2.pdf)
 
 The second paper is basically an extension of the first, it shows four more approaches to express specified emotions. 
 
@@ -30,9 +30,13 @@ To replicate the results in the paper, you need to follow the following instruct
 
 2. Download jiwei's dataset as in his [github page](), I made a code that converts his dataset from token IDs to actual tokens.
 
+
 ```
 python jiwei_dataset.py
 ```
+
+3. 
+
 
 ## Citation
 If you find our work is helpful, please consider citing one of the following papers.
