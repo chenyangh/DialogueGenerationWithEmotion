@@ -44,7 +44,7 @@ If you find our work is helpful, please consider citing one of the following pap
 ```
 @inproceedings{huang2018automatic,
   title={Automatic dialogue generation with expressed emotions},
-  author={Huang, Chenyang and Zaiane, Osmar and Trabelsi, Amine and Dziri, Nouha},
+  author={Huang, Chenyang and Za\"{i}ane, Osmar and Trabelsi, Amine and Dziri, Nouha},
   booktitle={Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers)},
   volume={2},
   pages={49--54},
@@ -62,7 +62,7 @@ If you find our work is helpful, please consider citing one of the following pap
   year = {2019},
   publisher = {Springer International Publishing},
   pages = {100--112},
-  author = {Chenyang Huang and Osmar R. Zaïane},
+  author = {Chenyang Huang and Osmar R. Za\"{i}ane},
   title = {Generating Responses Expressing Emotion in an Open-Domain Dialogue System},
   booktitle = {Internet Science}
 }
