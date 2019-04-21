@@ -39,6 +39,8 @@ python jiwei_dataset.py
 ## Citation
 If you find our work is helpful, please consider citing one of the following papers.
 
+[*Automatic dialogue generation with expressed emotions*](http://www.aclweb.org/anthology/N18-2008)
+
 ```
 @inproceedings{huang2018automatic,
   title={Automatic dialogue generation with expressed emotions},
@@ -50,6 +52,8 @@ If you find our work is helpful, please consider citing one of the following pap
 }
 ``` 
 
+
+[*Generating Responses Expressing Emotion in an Open-domain Dialogue System*](https://conversations2018.files.wordpress.com/2018/10/conversations_2018_paper_9_preprint2.pdf)
 
 ```
 @incollection{Huang2019,
