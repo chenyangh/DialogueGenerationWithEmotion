@@ -52,11 +52,15 @@ If you find our work is helpful, please consider citing one of the following pap
 
 
 ```
-@article{huang2018generating,
-  title={Generating Responses Expressing Emotion in an Open-domain Dialogue System},
-  author={Huang, Chenyang and Za{\"\i}ane, Osmar R},
-  journal={arXiv preprint arXiv:1811.10990},
-  year={2018}
+@incollection{Huang2019,
+  doi = {10.1007/978-3-030-17705-8_9},
+  url = {https://doi.org/10.1007/978-3-030-17705-8_9},
+  year = {2019},
+  publisher = {Springer International Publishing},
+  pages = {100--112},
+  author = {Chenyang Huang and Osmar R. Zaïane},
+  title = {Generating Responses Expressing Emotion in an Open-Domain Dialogue System},
+  booktitle = {Internet Science}
 }
 ```
 
