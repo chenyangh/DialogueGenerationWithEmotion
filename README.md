@@ -1,4 +1,5 @@
 # Dialogue Generation with Expressed Emotions
+<img src="img/pytorch-logo-dark.png" width="10%"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 This repo contains the implementation of the two papers:
 
