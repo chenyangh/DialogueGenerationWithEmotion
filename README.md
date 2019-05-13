@@ -12,7 +12,7 @@ The second paper is basically an extension of the first, it shows four more appr
 
 The following figure shows an overview of all the 7 models. 
 
-![models](img/models.jpg)
+![models](img/models.png)
 
 ## Instructions
 The code is originally written in PyTorch0.3 and Python3.6
