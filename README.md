@@ -34,11 +34,11 @@ To replicate the results in the paper, you need to follow the following instruct
 python jiwei_dataset.py
 ```
 
-3. 
+
 
 
 ## Citation
-If you find our work is helpful, please consider citing one of the following papers.
+If you find our work helpful, please consider citing one of the following papers.
 
 [*Automatic dialogue generation with expressed emotions*](http://www.aclweb.org/anthology/N18-2008)
 
