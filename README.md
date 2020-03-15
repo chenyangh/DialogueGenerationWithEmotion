@@ -36,7 +36,7 @@ python jiwei_dataset.py
 
 3. However, there are duplications in the dataset, therefore we need to remove them. I did this by ```sort``` and ```uniq``` linux command line, and there are many alternatives.
 
-4, Automaticlaly label the dataset by the classifier. 
+4. Automaticlaly label the dataset by the classifier. 
 
 ***The procedures are quite simple and I suggest redoing it by better classifiers (E.g. BERT).***
 
