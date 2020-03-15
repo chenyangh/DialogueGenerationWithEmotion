@@ -23,18 +23,24 @@ CBET dataset can be accessed through this [link](https://github.com/chenyangh/CB
 
 To replicate the results in the paper, you need to follow the following instructions:
 
-1.  Firstly, train an emotion classifier using CBET dataset.  
+1.  Firstly, train an emotion classifier using CBET dataset. I used a bi-LSTM.
 
 
 
-2. Download jiwei's dataset as in his [github page](), I made a code that converts his dataset from token IDs to actual tokens.
+2. Download jiwei's dataset as in his [github page](https://github.com/jiweil/Neural-Dialogue-Generation), I made a code that converts his dataset from token IDs to actual tokens.
 
 
 ```
 python jiwei_dataset.py
 ```
 
+3. However, there are duplications in the dataset, therefore we need to remove them. I did this by ```sort``` and ```uniq``` linux command line, and there are many alternatives.
 
+4, Automaticlaly label the dataset by the classifier. 
+
+***The procedures are quite simple and I suggest redoing it by better classifiers (E.g. BERT).***
+
+**Since I am still receiving questions about how to prepare the data, I looked into my old drives and found them. They are now in this [Google Drive fold](https://drive.google.com/drive/folders/1TiHxaajx2w0Cdz3FjD6PqSjy6qM0IUTD?usp=sharing)**
 
 
 ## Citation
