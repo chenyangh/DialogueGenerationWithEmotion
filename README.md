@@ -40,7 +40,7 @@ python jiwei_dataset.py
 
 ***The procedures are quite simple and I suggest redoing it by better classifiers (E.g. BERT).***
 
-**Since I am still receiving questions about how to prepare the data, I looked into my old drives and found them. They are now in this [Google Drive fold](https://drive.google.com/drive/folders/1TiHxaajx2w0Cdz3FjD6PqSjy6qM0IUTD?usp=sharing)**
+**Since I am still receiving questions about how to prepare the data, I looked into my old drives and found them. They are now in this [Google Drive folder](https://drive.google.com/drive/folders/1TiHxaajx2w0Cdz3FjD6PqSjy6qM0IUTD?usp=sharing)**
 
 
 ## Citation
